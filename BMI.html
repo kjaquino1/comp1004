@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BMI Calculator</title>
+    <script src="BMI.js"></script>
+</head>
+<body onload="window_onload()">
+    <p><b>Kelvs' BMI Calculator</b></p><br />
+    Height: <input id="txtHeight" type="number" min="1" max="1000" />
+    <select id="heightinput">
+        <option value="cm">cm</option>
+        <option value="in">in</option>
+    </select>
+    <p id="HeightHidden"></p>
+    Weight: <input id="txtWeight" type="number" min="1" max="1000" />
+    <select id="weightinput">
+        <option value="kg">kg</option>
+        <option value="lbs">lbs</option>
+    </select>
+    <p id="WeightHidden"></p>
+    Age: <input id="txtAge" type="number" min="1" max="150" />
+    <select id="genderinput">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+    </select>
+    <p id="AgeHidden"></p><br />
+    <input id="btnCalculate" type="button" value="Calculate" onclick="btnCalc_onclick()" /><br />
+    <p id="bmiResult" />
+    <p id="bmiCategory" />
+    <p id="bmiSolutions" />
+</body>
+</html>
